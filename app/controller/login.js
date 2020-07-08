@@ -9,7 +9,7 @@ module.exports = {
             .then(result => {
                     const token = jwt.sign({ data: result[0]}, 
                         process.env.JWT_SECRET, {
-                        expiresIn: '212h'
+                        expiresIn: '12h'
                     });
 
                     return res.json({
